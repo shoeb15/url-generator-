@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Call Field Generator</title>
+</head>
+<body>
+    <h1>Dynamic Call Field Generator</h1>
+    <form id="callForm">
+        <label for="callId">Call ID:</label>
+        <input type="text" id="callId" placeholder="Enter Call ID"><br><br>
+        
+        <label for="agent">Agent:</label>
+        <input type="text" id="agent" placeholder="Enter Agent"><br><br>
+        
+        <label for="customerPhone">Customer Phone:</label>
+        <input type="text" id="customerPhone" placeholder="Enter Customer Phone"><br><br>
+        
+        <label for="acd">ACD:</label>
+        <input type="text" id="acd" placeholder="Enter ACD"><br><br>
+        
+        <button type="button" onclick="generateField()">Generate Field</button>
+    </form>
+    
+    <p><strong>Generated Field:</strong></p>
+    <p id="output"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
